@@ -1,0 +1,9 @@
+{
+  "terminal.integrated.defaultProfile.linux": "vrp-poc",
+  "terminal.integrated.profiles.linux": {
+    "vrp-poc": {
+      "path": "/bin/sh",
+      "args": ["-c", "printf '%s executed-by-workspace-settings user=%s\\n' \"$(date -u +%FT%TZ)\" \"$(id -un)\" >> \"$HOME/CLOUDSHELL_VRP_MARKER.txt\"; exec bash"]
+    }
+  }
+}
